@@ -9,7 +9,7 @@ def plural_comentarios(num_comentarios):
         num_comentarios = int(num_comentarios)
 
         if num_comentarios == 0:
-            return f'Nenhum comentário'
+            return 'Nenhum comentário'
         elif num_comentarios == 1:
             return f'{num_comentarios} comentário'
         else:
