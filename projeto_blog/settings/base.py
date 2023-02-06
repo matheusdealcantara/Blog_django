@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-seci=b0+8mfi$j1i=cxawg)*u(^x)l1j\
 DEBUG = True
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1:8000', 'localhost']
 
 
 # Application definition
@@ -157,7 +157,8 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 AUTHENTICATION_BACKENDS = [
-    # AxesStandaloneBackend should be the first backend in the AUTHENTICATION_BACKENDS list.
+    # AxesStandaloneBackend should be the first backend in the
+    # AUTHENTICATION_BACKENDS list.
     'axes.backends.AxesStandaloneBackend',
 
     # Django ModelBackend is the default authentication backend.
